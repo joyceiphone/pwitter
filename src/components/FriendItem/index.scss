@@ -1,0 +1,38 @@
+.friend-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .friend-item-image-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+  }
+  .friend-item-right-icon {
+    margin-left: 60px;
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: none;
+      &.nonActive {
+        display: flex;
+      }
+      &.Active {
+        display: flex;
+      }
+    }
+  }
+  h4 {
+    font-size: 13px;
+    line-height: 16px;
+    color: #202841;
+    font-weight: 100;
+    padding-left: 18px;
+  }
+}

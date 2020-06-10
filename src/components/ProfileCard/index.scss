@@ -1,0 +1,29 @@
+.profile-card-container {
+  max-width: 991px;
+  margin: auto;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px #eeeeee;
+  text-align: left;
+  padding: 26px 20px;
+  margin-bottom: 25px;
+  .profile-title {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-bottom: 15px;
+  }
+  .profile-input {
+    width: 292px;
+    padding: 1px 19px;
+    border: 1px solid #d9d9d9;
+    border-radius: 23.5px;
+    font-size: 14px;
+  }
+  .profile-image {
+    img {
+      width: 123px;
+      height: 123px;
+    }
+  }
+}

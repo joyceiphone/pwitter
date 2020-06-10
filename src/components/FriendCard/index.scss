@@ -1,0 +1,13 @@
+.friend-card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px #eeeeee;
+  .friend-card-image {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

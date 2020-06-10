@@ -1,0 +1,15 @@
+.home-page-container {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  .home-page-left {
+    width: 280px;
+  }
+  .home-page-right {
+    width: 705px;
+    .right-container-head {
+      margin-bottom: 30px;
+    }
+  }
+}

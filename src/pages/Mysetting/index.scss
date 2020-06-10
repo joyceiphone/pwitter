@@ -1,0 +1,27 @@
+.setting-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 56px;
+  box-shadow: 0px 2px 6px
+    rgba(47, 83, 151, 0.1);
+  border-radius: 6px;
+  margin-bottom: 60px;
+  .setting-body {
+    margin-top: 21px;
+    padding-bottom: 21px;
+    .change-profile-input {
+      input {
+        margin-right: 25px;
+        width: 292px;
+        border: 1px solid #d9d9d9;
+        box-sizing: border-box;
+        border-radius: 24px;
+        padding: 9px 19px;
+      }
+      span {
+        color: #1f8efa;
+      }
+    }
+  }
+}

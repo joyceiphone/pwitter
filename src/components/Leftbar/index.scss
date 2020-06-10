@@ -1,0 +1,47 @@
+.left-bar-container {
+  background: #ffffff;
+  box-shadow: 0px 2px 6px
+    rgba(47, 83, 151, 0.1);
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  .left-bar-title {
+    box-shadow: inset 0px -1px 0px #f5f7fa;
+    h4 {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 300;
+      color: #919bab;
+      text-align: left;
+      padding: 24px 32px;
+    }
+  }
+  .left-bar-body {
+    margin-top: 0;
+    width: 100%;
+    .left-bar-card {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 28px;
+    }
+  }
+  .left-bar-card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 22px;
+    .footer-number {
+      font-size: 13px;
+      color: #000000;
+      width: 20px;
+      height: 20px;
+      &.changeColor {
+        background: #1f8efa;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.select-container {
+  font-size: 18px;
+  border: 1px solid #eeeeee;
+  color: #999999;
+  box-sizing: border-box;
+  padding: 7px 0;
+  font-weight: 500;
+  .select-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .toggle {
+    position: relative;
+    .drop-down {
+      display: none;
+      position: absolute;
+      top: 71px;
+      z-index: 1;
+      background-color: #ddd;
+      &.show {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        .option {
+          padding: 10px 35px;
+        }
+      }
+    }
+  }
+}

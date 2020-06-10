@@ -1,0 +1,43 @@
+.register-page {
+  width: 100%;
+  .form-container {
+    margin-bottom: 244px;
+    .form-card {
+      .input-container {
+        .file-input {
+          font-size: 18px;
+          padding: 47px;
+        }
+        &.isHalfWidth1 {
+          display: inline-block;
+          width: 300px;
+          margin-right: 50px;
+        }
+        &.isHalfWidth2 {
+          display: inline-block;
+          width: 300px;
+        }
+        .file-uploader {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          box-shadow: none;
+          border: none;
+          .image-text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 22px 26px;
+            h4 {
+              text-align: left;
+            }
+            img {
+              width: 123px;
+              height: 123px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

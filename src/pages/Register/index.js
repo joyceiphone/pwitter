@@ -60,7 +60,7 @@ export default function RegisterPage({
     console.log(uploadResult);
     setValues({
       ...values,
-      avatar: uploadResult.data.data[0],
+      avatar: uploadResult.data.data,
     });
   };
   const handleSubmit = async () => {

@@ -30,7 +30,9 @@ export default function StrangerBar({
     );
     if (token && user) {
       const data = await axios.get(
-        `${baseUrl}/users/strangers/byId?userId=${user._id}&page=${page}`,
+        `${baseUrl}/users/strangers/byId?userId=${
+          user._id
+        }&page=${page - 1}`,
         {
           headers: {
             authorization: `Bearer ${token}`,

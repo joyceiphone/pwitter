@@ -40,7 +40,9 @@ export default function LeftbarRoute({
     );
     if (token && user) {
       const data = await axios.get(
-        `${baseUrl}/users/friends/byId?userId=${user._id}&page=${index}`,
+        `${baseUrl}/users/friends/byId?userId=${
+          user._id
+        }&page=${index - 1}`,
         {
           headers: {
             authorization: `Bearer ${token}`,

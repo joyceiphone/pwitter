@@ -54,6 +54,30 @@ export default function FriendCard({
     fetchFriendInfo();
   }, [user]);
 
+  const handleRemoveFriend = async () => {
+    const token = window.localStorage.getItem(
+      "token"
+    );
+    if (token) {
+      const data = await axios.post(
+        `${baseUrl}/users/friends/remove`,
+        {
+          userId: user._id,
+          friendId: id,
+        },
+        {
+          headers: {
+            authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      if (data) {
+        setFriend({});
+        setTotal(0);
+      }
+    }
+  };
+
   const handleFriendsPage = () => {
     window.location.reload();
   };
@@ -81,6 +105,7 @@ export default function FriendCard({
       </div>
       <div className="friend-card-toggle">
         <img
+          onClick={handleRemoveFriend}
           src={iconx}
           alt="delete-friend"
         />
